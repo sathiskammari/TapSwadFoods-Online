@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Tap Foods</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background: linear-gradient(to right, #f09819, #ff5858);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin: 15px 0 25px 0;
+    }
+    .logo {
+      height: 70px;
+      width: auto;
+      object-fit: contain;
+    }
+    .register-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 480px;
+    }
+    .register-container h2 {
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #333;
+      text-align: center;
+    }
+    .form-control {
+      border-radius: 12px;
+      padding: 12px 15px;
+      transition: all 0.3s;
+    }
+    .form-control:focus {
+      box-shadow: 0 0 5px rgba(255, 88, 88, 0.5);
+      border-color: #ff5858;
+    }
+    .btn-primary {
+      background-color: #ff5858;
+      border: none;
+      padding: 12px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+    .btn-primary:hover {
+      background-color: #f03939;
+    }
+    .form-icon {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+    }
+    .input-group {
+      position: relative;
+    }
+    .input-group input {
+      padding-left: 40px;
+    }
+    .register-container p {
+      margin-top: 20px;
+      font-size: 15px;
+      text-align: center;
+    }
+    .register-container a {
+      color: #ff5858;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .register-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-container">
+    <h2>Create Account ✨</h2>
+    <div class="logo-container">
+      <img src="ChatGPT Image Apr 1, 2025, 04_41_17 PM.png" alt="TapSwad Foods Logo" class="logo">
+    </div>
+    <form action="/register" method="POST">
+      <div class="mb-3 input-group">
+        <i class="fa fa-user form-icon"></i>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+      </div>
+      <div class="mb-3 input-group">
+        <i class="fa fa-envelope form-icon"></i>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="mb-3 input-group">
+        <i class="fa fa-lock form-icon"></i>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+      </div>
+      <div class="mb-4 input-group">
+        <i class="fa fa-lock form-icon"></i>
+        <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Register</button>
+    </form>
+    <p class="mt-3">Already have an account? <a href="logintap.html">Login here</a></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

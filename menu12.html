@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESSERT LAB | TAP Swad</title>
+    <link rel="stylesheet" href="menu1.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon"> 🍰</span>
+                <span>Dessert Lab</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="tapfoods.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="orderhistory.html"><i class="fas fa-clock-rotate-left"></i> History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="restaurant-title">Dessert Lab</h1>
+                <div class="restaurant-meta">
+                    <span><i class="fas fa-star" style="color: #FFD700;"></i> 3.8 (600+)</span>
+                    <span><i class="fas fa-clock"></i> 20-25 min</span>
+                    <span><i class="fas fa-map-marker-alt"></i>BTM 1st Stage</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">SouthIndian Desserts & Cakes</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t4.ftcdn.net/jpg/12/36/18/77/240_F_1236187714_YpxKPI1trNsgqPooxN8Z6dmYFDQoukEX.jpg" 
+                         alt="Carrot Pudding" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Carrot Pudding</h3>
+                        <span class="menu-price">₹120</span>
+                    </div>
+                    <p class="menu-description">A smooth, sweet pudding made with fresh grated carrots, milk, and a dash of cardamom – a warm, comforting treat.</p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 3.9
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Carrot Pudding', 
+                                120.00, 
+                                'Dessert Lab', 
+                                3.9, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t4.ftcdn.net\/jpg\/12/36/18/77/240_F_1236187714_YpxKPI1trNsgqPooxN8Z6dmYFDQoukEX.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t3.ftcdn.net/jpg/09/76/82/16/240_F_976821602_SkBy293OsQQG6QYLUz9SqrAL40cVEYm5.jpg" 
+                         alt="Kheer" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Kheer</h3>
+                        <span class="menu-price">₹150</span>
+                    </div>
+                    <p class="menu-description">A creamy, rice pudding infused with aromatic saffron, nuts, and raisins – the perfect indulgence after any meal.</p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 4.0
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Kheer', 
+                                150.00, 
+                                'Dessert Lab', 
+                                4.0, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t3.ftcdn.net\/jpg\/09/76/82/16/240_F_976821602_SkBy293OsQQG6QYLUz9SqrAL40cVEYm5.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t4.ftcdn.net/jpg/10/00/17/87/240_F_1000178748_SlAmYv3pQo96i9j91rfI04jfWmSwlX0v.jpg" 
+                         alt="Gulab Jamun" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Gulab Jamun</h3>
+                        <span class="menu-price">₹80</span>
+                    </div>
+                    <p class="menu-description">Soft, syrup-soaked dough balls that melt in your mouth, offering a sweet burst of flavor with every bite.</p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 4.1
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Gulab Jamun', 
+                                80.00, 
+                                'Dessert Lab', 
+                                4.1, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t4.ftcdn.net\/jpg\/10/00/17/87/240_F_1000178748_SlAmYv3pQo96i9j91rfI04jfWmSwlX0v.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t3.ftcdn.net/jpg/13/03/61/32/240_F_1303613213_gcZ39w8I6nh1V8Ux0qtTKvSf2YxVfGuz.jpg" 
+                         alt="Rasmalai" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Rasmalai</h3>
+                        <span class="menu-price">₹150</span>
+                    </div>
+                    <p class="menu-description">Soft, spongy milk-based cakes soaked in rich, flavored cream – an irresistible dessert with a delicate touch.
+
+                    </p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 4.1
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Rasmalai', 
+                                150.00, 
+                                'Dessert Lab', 
+                                4.1, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t3.ftcdn.net\/jpg\/13/03/61/32/240_F_1303613213_gcZ39w8I6nh1V8Ux0qtTKvSf2YxVfGuz.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t3.ftcdn.net/jpg/07/71/42/72/240_F_771427239_EHPuNY3tuRtE02E3aQxS051Squ40uByV.jpg" 
+                         alt="Rasagulla" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Rasagulla</h3>
+                        <span class="menu-price">₹70</span>
+                    </div>
+                    <p class="menu-description">Spongy, syrup-soaked balls made from fresh cheese, offering a light, sweet indulgence that melts effortlessly.
+
+                    </p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 3.8
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Rasagulla', 
+                                70.00, 
+                                'Dessert Lab', 
+                                3.8, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t3.ftcdn.net\/jpg\/07/71/42/72/240_F_771427239_EHPuNY3tuRtE02E3aQxS051Squ40uByV.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t3.ftcdn.net/jpg/02/96/25/46/240_F_296254642_cjw90r0kpO3Pq0MwxloHIo3FayiQ1S1T.jpg" 
+                         alt="Chocolate Cake" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Chocolate Cake</h3>
+                        <span class="menu-price">₹60</span>
+                    </div>
+                    <p class="menu-description">Rich, moist, and deeply chocolatey — a timeless treat for every dessert lover.
+
+                    </p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 3.9
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Chocolate Cake', 
+                                60.00, 
+                                'Dessert Lab', 
+                                3.9, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t3.ftcdn.net\/jpg\/02/96/25/46/240_F_296254642_cjw90r0kpO3Pq0MwxloHIo3FayiQ1S1T.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t3.ftcdn.net/jpg/09/84/65/30/240_F_984653003_Mq05on9NdNEPV1pXxemQJQ6M4yTLN4LS.jpg" 
+                         alt="Ice Cream Cake" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Ice Cream Cake</h3>
+                        <span class="menu-price">₹180</span>
+                    </div>
+                    <p class="menu-description">Cool, creamy layers of cake and ice cream — perfect for any celebration!
+
+                    </p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 4.0
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Ice Cream Cake', 
+                                180.00, 
+                                'Dessert Lab', 
+                                4.0, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t3.ftcdn.net\/jpg\/09/84/65/30/240_F_984653003_Mq05on9NdNEPV1pXxemQJQ6M4yTLN4LS.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t4.ftcdn.net/jpg/09/97/67/19/240_F_997671979_qp52f3t4r8hcw7gHmddoPFWaJqlDkIWc.jpg" 
+                         alt="Red Velvet Cake" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Red Velvet Cake</h3>
+                        <span class="menu-price">₹250</span>
+                    </div>
+                    <p class="menu-description">Soft, smooth, and lightly sweet with classic cream cheese frosting.
+                    </p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 3.8
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Red Velvet Cake', 
+                                150.00, 
+                                'Dessert Lab', 
+                                4.1, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t4.ftcdn.net\/jpg\/09/97/67/19/240_F_997671979_qp52f3t4r8hcw7gHmddoPFWaJqlDkIWc.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cart-notification" id="cart-notification">
+        <i class="fas fa-check-circle"></i>
+        <span>Added to your cart!</span>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>🍰</span>
+                <span>Dessert Lab</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 TAP Swad Online Foods. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to adjust quantity
+        function adjustQuantity(button, change) {
+            const input = button.parentElement.querySelector('.quantity-input');
+            let newValue = parseInt(input.value) + change;
+            if (newValue < 1) newValue = 1;
+            input.value = newValue;
+        }
+        
+        // Function to add items to the cart with animation
+        function addToCart(name, price, restaurant, rating, quantity, image) {
+            // Create cart item object
+            const cartItem = {
+                id: Date.now(),
+                name: name,
+                price: price,
+                restaurant: restaurant,
+                rating: rating,
+                quantity: parseInt(quantity),
+                image: image,
+                addedAt: new Date().toISOString()
+            };
+
+            // Add to cart in localStorage
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            
+            // Check if item exists
+            const existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.quantity += parseInt(quantity);
+            } else {
+                cart.push(cartItem);
+            }
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            // Update cart count with animation
+            updateCartCount(true);
+            
+            // Show notification
+            showNotification(name);
+            
+            // Add to cart animation
+            const addButton = event.target.closest('.add-btn');
+            addButton.innerHTML = '<i class="fas fa-check"></i> Added';
+            addButton.style.background = 'var(--secondary)';
+            
+            setTimeout(() => {
+                addButton.innerHTML = '<i class="fas fa-plus"></i> Add';
+                addButton.style.background = 'var(--primary)';
+            }, 2000);
+        }
+
+        // Function to update cart count with optional animation
+        function updateCartCount(animate = false) {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const totalItems = cart.reduce((total, item) => total + parseInt(item.quantity), 0);
+            const cartCount = document.getElementById("cart-count");
+            
+            if (animate) {
+                cartCount.style.transform = 'scale(1.2)';
+                setTimeout(() => {
+                    cartCount.style.transform = 'scale(1)';
+                }, 300);
+            }
+            
+            cartCount.textContent = totalItems;
+        }
+
+        // Function to show notification with item name
+        function showNotification(itemName) {
+            const notification = document.getElementById("cart-notification");
+            notification.querySelector('span').textContent = `${itemName} added to cart!`;
+            notification.classList.add("show");
+            
+            setTimeout(() => {
+                notification.classList.remove("show");
+            }, 3000);
+        }
+
+        // Initialize cart count on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+            
+            // Add subtle animations to menu cards on load
+            const cards = document.querySelectorAll('.menu-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+                card.classList.add('animate__animated', 'animate__fadeInUp');
+            });
+        });
+    </script>
+</body>
+</html>

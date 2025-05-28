@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <link rel="stylesheet" href="tapfoods.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .order-container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .order-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .order-header {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .order-date {
+            color: gray;
+            font-size: 14px;
+        }
+        .order-items {
+            margin-top: 10px;
+        }
+        .order-items li {
+            list-style: none;
+            padding: 5px 0;
+        }
+        .clear-history-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.clear-btn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.clear-btn:hover {
+    background-color: #d32f2f;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Order History</h2>
+    </header>
+
+    <div class="order-container" id="orders-list">
+        <!-- Orders will be displayed here -->
+    </div>
+    <div class="clear-history-section">
+        <button onclick="clearOrderHistory()" class="clear-btn">Clear Order History</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let orders = JSON.parse(localStorage.getItem("orders")) || [];
+            let orderListDiv = document.getElementById("orders-list");
+
+            if (orders.length === 0) {
+                orderListDiv.innerHTML = "<p>No past orders found.</p>";
+                return;
+            }
+
+            orders.forEach(order => {
+                let orderHTML = `
+                    <div class="order-card">
+                        <div class="order-header">Order #${order.id}</div>
+                        <div class="order-date">${order.date}</div>
+                        <ul class="order-items">
+                            ${order.items.map(item => `<li>${item.name} - ${item.quantity} x ₹${item.price}</li>`).join('')}
+                        </ul>
+                        <p><strong>Total Amount: ₹${order.totalAmount.toFixed(2)}</strong></p>
+                    </div>
+                `;
+                orderListDiv.innerHTML += orderHTML;
+            });
+        });
+
+        function clearOrderHistory() {
+    const confirmClear = confirm("Are you sure you want to clear all order history?");
+    if (confirmClear) {
+        localStorage.removeItem('orders');
+        alert("Order history cleared!");
+        location.reload(); // Refresh to reflect changes
+    }
+}
+    </script>
+</body>
+</html>

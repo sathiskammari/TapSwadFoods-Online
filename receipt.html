@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Receipt - TAP SWAD</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin: 0;
+    }
+    .receipt-container {
+      background: white;
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .receipt-container h2 {
+      color: #e63946;
+      margin-bottom: 10px;
+    }
+    .info {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .items {
+      border-top: 1px solid #ccc;
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .item img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+    .item-details {
+      flex-grow: 1;
+    }
+    .item-details h4 {
+      margin: 0;
+    }
+    .total {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: right;
+      margin-top: 20px;
+    }
+    .back-btn {
+      display: block;
+      margin: 25px auto 0;
+      padding: 10px 20px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      background-color: #d62828;
+    }
+
+    .receipt-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.success-message {
+    text-align: center;
+    background-color: #e0ffe0;
+    border: 2px solid #3cb371;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.success-message h2 {
+    color: #2e8b57;
+}
+
+.thankyou-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.order-again-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.order-again-btn:hover {
+    background: #e64a19;
+}
+  </style>
+</head>
+<body>
+    <section class="receipt-container">
+        <div class="success-message">
+            <h2>🎉 Order Successfully Placed!</h2>
+            <p>We will reach you in time with your order.</p>
+        </div>
+    
+        <div class="receipt-details" id="receipt-details">
+            <!-- Order items and details will be dynamically inserted here -->
+        </div>
+    
+        <div class="thankyou-section">
+            <h3>Thank You for Ordering with TAP SWAD FOODS!</h3>
+            <a href="tapfoods.html" class="order-again-btn">Order Again!</a>
+        </div>
+    </section>
+
+  <script>
+    const latestOrder = JSON.parse(localStorage.getItem("latestOrder"));
+
+    if (latestOrder) {
+      document.getElementById("order-id").textContent = latestOrder.id;
+      document.getElementById("order-date").textContent = latestOrder.date;
+      document.getElementById("order-time").textContent = latestOrder.time;
+      document.getElementById("order-total").textContent = latestOrder.totalAmount.toFixed(2);
+
+      const itemsContainer = document.getElementById("order-items");
+      latestOrder.items.forEach(item => {
+        const itemEl = document.createElement("div");
+        itemEl.classList.add("item");
+        itemEl.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" />
+          <div class="item-details">
+            <h4>${item.name}</h4>
+            <p>Qty: ${item.quantity}</p>
+            <p>Price: ₹${(item.price * item.quantity).toFixed(2)}</p>
+          </div>
+        `;
+        itemsContainer.appendChild(itemEl);
+      });
+    } else {
+      document.querySelector(".receipt-container").innerHTML = "<h2>No recent order found.</h2>";
+    }
+  </script>
+</body>
+</html>

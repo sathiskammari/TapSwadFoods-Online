@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAP SWAD Online Foods</title>
+    <link rel="stylesheet" href="tapfoods.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="ChatGPT Image Apr 19, 2025, 11_34_50 AM.png" alt="TapSwad Foods Logo" class="logo">
+             <h1>TAP SWAD FOODS</h1>
+            <form class="search-box">
+                <input type="search" name="focus" placeholder="Search" id="search-input">
+                <button><span class="material-symbols-outlined">search</span></button>
+            </form>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="orderhistory.html">Order History</a></li>
+                <li><a href="logintap.html">Login</a></li>
+                <li><a href="registertap.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome-section">
+        <marquee><h2>WELCOME TO TAP SWAD FOODS , Get Your Order in 15mins</h2></marquee>
+    </section>
+
+    <section id="restaurants">
+        <h2 class="section-title">RESTAURANTS & HOTELS</h2>
+        <div class="restaurant-grid">
+            <!-- Restaurant 1 - Biryani House -->
+            <div class="modern-restaurant-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/premium-photo/pilaf-with-chicken-rice-vegetables-black-background-indian-chicken-biryani-with-rice-vegetables-black-background-ai-generated_538213-6485.jpg" alt="Biryani House">
+                    <div class="card-badge open">OPEN</div>
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="restaurant-header">
+                        <h3>BIRYANI HOUSE</h3>
+                        <div class="rating-badge">
+                            <span>4.0</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="cuisine-type">South Indian • Biryani</p>
+                    <div class="restaurant-meta">
+                        <span class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            Udipi Garden
+                        </span>
+                        <span class="delivery-time">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            15-20 min
+                        </span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="menu2.html" class="view-menu-btn">View Menu</a>
+                        <button class="favorite-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Restaurant 2 - Noodle Bowl -->
+            <div class="modern-restaurant-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/premium-photo/hopsticks-take-noodles-udon-sweet-sour-sauce-from-plate-traditional-asian-cuisine_77190-410.jpg" alt="Noodle Bowl">
+                    <div class="card-badge open">OPEN</div>
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="restaurant-header">
+                        <h3>NOODLE BOWL</h3>
+                        <div class="rating-badge">
+                            <span>3.6</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="cuisine-type">Asian • Noodles</p>
+                    <div class="restaurant-meta">
+                        <span class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            BTM 2nd Stage
+                        </span>
+                        <span class="delivery-time">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            20-25 min
+                        </span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="menu1.html" class="view-menu-btn">View Menu</a>
+                        <button class="favorite-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Restaurant 3 - Udipi Tiffins -->
+            <div class="modern-restaurant-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/premium-photo/cheese-masala-dosa-recipe-with-sambar-chutney-selective-focus_466689-36130.jpg" alt="Udipi Tiffins">
+                    <div class="card-badge open">OPEN</div>
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="restaurant-header">
+                        <h3>UDIPI TIFFINS</h3>
+                        <div class="rating-badge">
+                            <span>3.9</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="cuisine-type">South Indian • Breakfast</p>
+                    <div class="restaurant-meta">
+                        <span class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            BTM 1st Stage
+                        </span>
+                        <span class="delivery-time">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            10-15 min
+                        </span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="menu3.html" class="view-menu-btn">View Menu</a>
+                        <button class="favorite-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Restaurant 4 - Pizza Station -->
+            <div class="modern-restaurant-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/premium-photo/delicious-pizza-floating-air-generative-ai_808510-506.jpg" alt="Pizza Station">
+                    <div class="card-badge open">OPEN</div>
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="restaurant-header">
+                        <h3>PIZZA STATION</h3>
+                        <div class="rating-badge">
+                            <span>3.8</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="cuisine-type">Italian • Pizza</p>
+                    <div class="restaurant-meta">
+                        <span class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            Koramangala
+                        </span>
+                        <span class="delivery-time">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            25-30 min
+                        </span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="menu4.html" class="view-menu-btn">View Menu</a>
+                        <button class="favorite-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Restaurant 5 - Burger Kingdom -->
+            <div class="modern-restaurant-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/free-photo/side-view-chicken-burger-deep-fired-chicken-fillet-with-tomato-cheese-lettuce-burger-buns_141793-4816.jpg" alt="Burger Kingdom">
+                    <div class="card-badge open">OPEN</div>
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="restaurant-header">
+                        <h3>BURGER KINGDOM</h3>
+                        <div class="rating-badge">
+                            <span>3.9</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="cuisine-type">American • Burgers</p>
+                    <div class="restaurant-meta">
+                        <span class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            Silk Board
+                        </span>
+                        <span class="delivery-time">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            15-20 min
+                        </span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="menu5.html" class="view-menu-btn">View Menu</a>
+                        <button class="favorite-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Restaurant 6 - Pasta Restaurant -->
+            <div class="modern-restaurant-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/premium-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_1161893-1779.jpg" alt="Pasta Restaurant">
+                    <div class="card-badge open">OPEN</div>
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="restaurant-header">
+                        <h3>PASTA RESTAURANT</h3>
+                        <div class="rating-badge">
+                            <span>4.0</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="cuisine-type">Italian • Pasta</p>
+                    <div class="restaurant-meta">
+                        <span class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            Banashankari
+                        </span>
+                        <span class="delivery-time">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            30-35 min
+                        </span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="menu6.html" class="view-menu-btn">View Menu</a>
+                        <button class="favorite-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Restaurant 7 - Smoothie Spot -->
+            <div class="modern-restaurant-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/free-photo/healthy-kiwi-smoothie-summer-recipe_53876-32268.jpg" alt="Smoothie Spot">
+                    <div class="card-badge open">OPEN</div>
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="restaurant-header">
+                        <h3>SMOOTHIE SPOT</h3>
+                        <div class="rating-badge">
+                            <span>4.1</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="cuisine-type">Beverages • Healthy</p>
+                    <div class="restaurant-meta">
+                        <span class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            BTM 1st Stage
+                        </span>
+                        <span class="delivery-time">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            10-15 min
+                        </span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="menu7.html" class="view-menu-btn">View Menu</a>
+                        <button class="favorite-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Restaurant 8 - Sandwiche slice -->
+            <div class="modern-restaurant-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/premium-photo/close-up-sandwiches-french-fries-cutting-board-against-black-background_1048944-26204170.jpg" alt="Sandwiche Slice">
+                    <div class="card-badge open">OPEN</div>
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="restaurant-header">
+                        <h3>SANDWICHE SLICE</h3>
+                        <div class="rating-badge">
+                            <span>3.8</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="cuisine-type">Fast Food • Sandwiches</p>
+                    <div class="restaurant-meta">
+                        <span class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            HSR Layout , Bengaluru
+                        </span>
+                        <span class="delivery-time">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            15-20 min
+                        </span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="menu8.html" class="view-menu-btn">View Menu</a>
+                        <button class="favorite-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Restaurant 9 - Saindhav Veg Meals -->
+             <div class="modern-restaurant-card">
+                <div class="card-image">
+                    <img src="https://img.freepik.com/premium-photo/indian-hindu-veg-thali-also-known-as-food-platter-is-complete-lunch-dinner-meal-closeup-selective-focus_466689-9084.jpg?ga=GA1.1.1427086851.1732272333&semt=ais_hybrid&w=740" alt="Sandwiche Slice">
+                    <div class="card-badge open">OPEN</div>
+                    <button class="quick-view-btn">Quick View</button>
+                </div>
+                <div class="card-content">
+                    <div class="restaurant-header">
+                        <h3>SAINDHAV VEG MEALS</h3>
+                        <div class="rating-badge">
+                            <span>3.8</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="cuisine-type">SouthIndian • Veg Thali</p>
+                    <div class="restaurant-meta">
+                        <span class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            BTM 2nd Stage
+                        </span>
+                        <span class="delivery-time">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            15-20 min
+                        </span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="menu9.html" class="view-menu-btn">View Menu</a>
+                        <button class="favorite-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Restaurant 10 - Sammy Veg & Non Veg -->
+        <div class="modern-restaurant-card">
+            <div class="card-image">
+                <img src="https://t4.ftcdn.net/jpg/02/09/67/95/240_F_209679538_ltUEYJrVAPe0KwY7nvVCrahQzh8XFjUq.jpg" alt="Sandwiche Slice">
+                <div class="card-badge open">OPEN</div>
+                <button class="quick-view-btn">Quick View</button>
+            </div>
+            <div class="card-content">
+                <div class="restaurant-header">
+                    <h3>SAMMY VEG & NON-VEG</h3>
+                    <div class="rating-badge">
+                        <span>3.7</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="cuisine-type">SouthIndian • Mandi , Thali</p>
+                <div class="restaurant-meta">
+                    <span class="location">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        BTM 1st Stage
+                    </span>
+                    <span class="delivery-time">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                            <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                        20-25 min
+                    </span>
+                </div>
+                <div class="card-actions">
+                    <a href="menu10.html" class="view-menu-btn">View Menu</a>
+                    <button class="favorite-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Restaurant 11 - Bhoomi Breakfasst -->
+    <div class="modern-restaurant-card">
+        <div class="card-image">
+            <img src="https://t4.ftcdn.net/jpg/02/17/39/75/240_F_217397507_QmlPOR9ASQ0xWLnj4KJcbaw9UFUtR6kh.jpg" alt="Sandwiche Slice">
+            <div class="card-badge open">OPEN</div>
+            <button class="quick-view-btn">Quick View</button>
+        </div>
+        <div class="card-content">
+            <div class="restaurant-header">
+                <h3>BHOOMI BREAKFASST</h3>
+                <div class="rating-badge">
+                    <span>4.0</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                </div>
+            </div>
+            <p class="cuisine-type">SouthIndian • Breakfast</p>
+            <div class="restaurant-meta">
+                <span class="location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    Opposite Udipi Garden , BTM
+                </span>
+                <span class="delivery-time">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                        <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                    </svg>
+                    10-15 min
+                </span>
+            </div>
+            <div class="card-actions">
+                <a href="menu11.html" class="view-menu-btn">View Menu</a>
+                <button class="favorite-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Restaurant 12 - Dessert Lab -->
+    <div class="modern-restaurant-card">
+        <div class="card-image">
+            <img src="https://img.freepik.com/premium-photo/two-pieces-chocolate-brownie-closeup-saucer-with-slices-strawberries-crumbs-dark-blue-background_115130-43.jpg?ga=GA1.1.1427086851.1732272333&semt=ais_hybrid&w=740" alt="Sandwiche Slice">
+            <div class="card-badge open">OPEN</div>
+            <button class="quick-view-btn">Quick View</button>
+        </div>
+        <div class="card-content">
+            <div class="restaurant-header">
+                <h3>DESSERTS LAB</h3>
+                <div class="rating-badge">
+                    <span>4.2</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                </div>
+            </div>
+            <p class="cuisine-type">SouthIndian • Desserts & Cakes</p>
+            <div class="restaurant-meta">
+                <span class="location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    Mahadeshwara Nagar ,BTM
+                </span>
+                <span class="delivery-time">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#666">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                        <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                    </svg>
+                    10-20 min
+                </span>
+            </div>
+            <div class="card-actions">
+                <a href="menu12.html" class="view-menu-btn">View Menu</a>
+                <button class="favorite-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff4757" stroke-width="2">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</section> 
+
+   <!-- 🌸 Seasonal Specials Section -->
+<section id="seasonal-specials">
+    <h2>🌸 Seasonal Specials 🍂</h2>
+
+    <!-- 🌞 Summer Specials -->
+    <h2> ☀️ SUMMER SPECIALS</h2>
+    <p class="seasonal-desc">Limited-time seasonal dishes crafted with the freshest ingredients! Try them before they're gone!</p>
+    <div class="seasonal-container">
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/free-photo/homemade-mango-yoghurt-marble-surface_1150-41963.jpg" alt="Mango Delight">
+            <div class="seasonal-info">
+                <h3>Mango Delight</h3>
+                <p>Summer Exclusive</p>
+                <span class="price">₹120.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/premium-photo/mango-lassi-yogurt-indian-popular-summer-drink_960396-799223.jpg" alt="Lassi">
+            <div class="seasonal-info">
+                <h3>Lassi (Mango/Rose/Kesar)</h3>
+                <p>Cool Summer Drink</p>
+                <span class="price">₹150.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/premium-photo/fresh-coconut-cream-with-chopped-nuts-leaf-garnish-clay-bowl_1370221-4282.jpg" alt="Tender Coconut Malai">
+            <div class="seasonal-info">
+                <h3>Tender Coconut Malai</h3>
+                <p>Spring Special</p>
+                <span class="price">₹180.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/premium-photo/composition-with-watermelon-juice-blue-table-summer-fruit_185193-15952.jpg" alt="Watermelon Cooler">
+            <div class="seasonal-info">
+                <h3>Watermelon Cooler</h3>
+                <p>Refreshing Summer Drink</p>
+                <span class="price">₹90.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ❄️ Winter Specials -->
+    <h2>❄️ WINTER SPECIALS 🍂</h2>
+    <p class="seasonal-desc">Delicious cozy dishes perfect for the chill!</p>
+    <div class="seasonal-container">
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/premium-photo/hot-chocolate-with-marshmallows-blue-enamel-mug-white-table_132254-1219.jpg" alt="Hot Chocolate">
+            <div class="seasonal-info">
+                <h3>Hot Chocolate with Marshmallows</h3>
+                <p>Winter Warmer</p>
+                <span class="price">₹120.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/premium-photo/gajar-ka-halwa-is-carrotbased-sweet-dessert-pudding-from-india_466689-21748.jpg" alt="Gajar Ka Halwa">
+            <div class="seasonal-info">
+                <h3>Gajar Ka Halwa</h3>
+                <p>Traditional Indian Dessert</p>
+                <span class="price">₹150.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/free-photo/top-view-christmas-food-elements_23-2148746068.jpg" alt="Mulled Wine">
+            <div class="seasonal-info">
+                <h3>Mulled Wine 🍷🌿</h3>
+                <p>Perfect for Cold Nights</p>
+                <span class="price">₹180.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/premium-photo/cozy-fondue-night-with-friends-gathered-around-pot-melted-cheese_1271419-7265.jpg" alt="Cheesy Fondue">
+            <div class="seasonal-info">
+                <h3>Cheesy Fondue Pot</h3>
+                <p>Warm & Gooey Delight</p>
+                <span class="price">₹90.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🌧️ Rainy Season Specials -->
+    <h2>🌧️ Rainy Season Specials (Monsoon Delights ☔🌿)</h2>
+    <p class="seasonal-desc">Perfect snacks for cozy rainy days!</p>
+    <div class="seasonal-container">
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/premium-photo/kachori-is-flat-spicy-snack-from-india-also-spelled-as-kachauri-kachodi-served-with-tomato-ketchup-selective-focus_466689-63284.jpg" alt="Masala Chai & Pakoras">
+            <div class="seasonal-info">
+                <h3>Masala Chai & Pakoras ☕🍟</h3>
+                <p>Rainy Day Combo</p>
+                <span class="price">₹60.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/free-photo/close-up-boiled-corn-with-chili-powder_23-2148283104.jpg" alt="Bhutta">
+            <div class="seasonal-info">
+                <h3>Bhutta (Roasted Corn) 🌽🔥</h3>
+                <p>Street Style</p>
+                <span class="price">₹80.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+        <div class="seasonal-card">
+            <img src="https://img.freepik.com/premium-photo/concept-tasty-lunch-with-plate-khinkali-sauce-wooden_185193-26973.jpg" alt="Momos">
+            <div class="seasonal-info">
+                <h3>Momos with Spicy Chutney 🥟🌶️</h3>
+                <p>Monsoon Must-Have</p>
+                <span class="price">₹90.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+        <div class="seasonal-card">
+            <img src="https://t3.ftcdn.net/jpg/11/24/33/06/240_F_1124330627_CC2u3D0il0WC7Uu6TO1CYIdZwVUUne7m.jpg" alt="Vada Pav🥟🌶️">
+            <div class="seasonal-info">
+                <h3>Vada Pav🥟🌶️</h3>
+                <p>Street Food Classic</p>
+                <span class="price">₹70.00</span>
+                <button class="add-btn">Add to Cart 🛒</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ✨ Candle Light Dinner Section -->
+<section>
+    <h2>BOOK YOUR CANDLE LIGHT DINNER</h2>
+    <div class="image-container">
+        <img src="https://media.istockphoto.com/id/1460872854/photo/man-and-woman-enjoying-a-romantic-dinner-date.jpg?s=612x612&w=0&k=20&c=OZc7UCcrWLKrIfsMPJvqXzi1S8lrajfEtXsXBIvzvdE=" alt="Romantic Dinner" class="booking-image">
+        <a href="#" id="book-now-btn" class="book-now-btn">Book Now</a>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h2>Select a Restaurant and Time Slot</h2>
+
+            <!-- Restaurant Selection -->
+            <div class="restaurants">
+                <div class="restaurant" data-name="Restaurant AMARAVATHI LUXURY RESTAURANT , BENGALURU">AMARAVATHI LUXURY RESTAURANT , BENGALURU</div>
+                <div class="restaurant" data-name="Restaurant TAJ RESORT , BENGALURU">TAJ RESORT , BENGALURU</div>
+                <div class="restaurant" data-name="Restaurant SKYYE RESORT, BENGALURU">SKYYE RESORT, BENGALURU</div>
+            </div>
+
+            <!-- Time Slot Selection -->
+            <h3>Select a Time Slot</h3>
+            <div class="timeslots">
+                <div class="timeslot">9:00 PM - 10:00 PM</div>
+                <div class="timeslot">10:00 PM - 11:00 PM</div>
+                <div class="timeslot">10:30 PM - 11:30 PM</div>
+            </div>
+
+            <!-- Confirm Button -->
+            <button id="confirm-booking">Confirm Booking</button>
+        </div>
+    </div>
+</section>
+
+    <script>
+        
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const totalItems = cart.reduce((total, item) => total + parseInt(item.quantity), 0);
+            document.getElementById("cart-count").textContent = totalItems;
+        }
+
+        // Load cart count when the page loads
+        window.onload = function() {
+            updateCartCount();
+        };
+
+             
+        document.addEventListener('DOMContentLoaded', function() {
+    // Get DOM elements
+    const searchInput = document.getElementById('search-input');
+    const restaurantCards = document.querySelectorAll('.modern-restaurant-card');
+    const searchBox = document.querySelector('.search-box');
+    let searchTimeout;
+    
+    // Debounced search function
+    function performSearch() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        
+        if (searchTerm === '') {
+            // Show all cards if search is empty
+            restaurantCards.forEach(card => {
+                card.style.display = 'block';
+                // Remove any existing highlights
+                const nameElement = card.querySelector('h3');
+                const cuisineElement = card.querySelector('.cuisine-type');
+                nameElement.innerHTML = nameElement.textContent;
+                cuisineElement.innerHTML = cuisineElement.textContent;
+            });
+            return;
+        }
+        
+        // Filter and display matching restaurants
+        restaurantCards.forEach(card => {
+            const nameElement = card.querySelector('h3');
+            const cuisineElement = card.querySelector('.cuisine-type');
+            const restaurantName = nameElement.textContent.toLowerCase();
+            const cuisineType = cuisineElement.textContent.toLowerCase();
+            
+            // Remove previous highlights
+            nameElement.innerHTML = nameElement.textContent;
+            cuisineElement.innerHTML = cuisineElement.textContent;
+            
+            if (restaurantName.includes(searchTerm)) {
+                card.style.display = 'block';
+                // Highlight matching text
+                const regex = new RegExp(searchTerm, 'gi');
+                nameElement.innerHTML = nameElement.textContent.replace(
+                    regex, 
+                    match => `<span class="search-highlight">${match}</span>`
+                );
+            } else if (cuisineType.includes(searchTerm)) {
+                card.style.display = 'block';
+                // Highlight matching text
+                const regex = new RegExp(searchTerm, 'gi');
+                cuisineElement.innerHTML = cuisineElement.textContent.replace(
+                    regex, 
+                    match => `<span class="search-highlight">${match}</span>`
+                );
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+    
+    // Add event listeners
+    searchInput.addEventListener('input', function() {
+        // Debounce the search to improve performance
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(performSearch, 300);
+    });
+    
+    // Handle form submission
+    if (searchBox) {
+        searchBox.addEventListener('submit', function(e) {
+            e.preventDefault();
+            performSearch();
+        });
+    }
+    
+    // Handle search button click
+    const searchButton = document.querySelector('.search-box button');
+    if (searchButton) {
+        searchButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            performSearch();
+        });
+    }
+});
+
+// Add this CSS to your stylesheet for highlighting
+const style = document.createElement('style');
+style.textContent = `
+    .search-highlight {
+        background-color: #FFD700;
+        padding: 0 2px;
+        border-radius: 2px;
+        font-weight: bold;
+    }
+`;
+document.head.appendChild(style);
+
+
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const totalItems = cart.reduce((total, item) => total + parseInt(item.quantity), 0);
+            document.getElementById("cart-count").textContent = totalItems;
+        }
+
+
+        function updateRestaurantStatus() {
+        const now = new Date();
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+
+        const allCards = document.querySelectorAll(".modern-restaurant-card");
+
+        allCards.forEach(card => {
+            const title = card.querySelector("h3").innerText.trim().toUpperCase();
+            const badge = card.querySelector(".card-badge");
+
+            let status = "CLOSED";
+
+            if (title.includes("UDIPI") || title.includes("BHOOMI")) {
+                // Udipi & Bhoomi Breakfast Logic
+                if (hour >= 7 && hour < 11) {
+                    if (hour === 8) {
+                        status = "BUSY";
+                    } else {
+                        status = "OPEN";
+                    }
+                }
+            } else {
+                // Other 10 Restaurants Logic
+                if (hour >= 10 && hour < 22) {
+                    // Busy every 2 hours for 1 hour: (12–1, 2–3, 4–5, etc.)
+                    if ((hour % 2 === 0) && minute < 60) {
+                        status = "BUSY";
+                    } else {
+                        status = "OPEN";
+                    }
+                }
+            }
+
+            // Update badge text and class
+            badge.innerText = status;
+            badge.classList.remove("open", "busy", "closed");
+
+            if (status === "OPEN") badge.classList.add("open");
+            else if (status === "BUSY") badge.classList.add("busy");
+            else badge.classList.add("closed");
+        });
+    }
+
+    // Run once immediately
+    updateRestaurantStatus();
+
+    // Re-run every minute to keep status updated
+    setInterval(updateRestaurantStatus, 60 * 1000);
+
+
+        const modal = document.getElementById('booking-modal');
+        const openModal = document.getElementById('book-now-btn');
+        const closeModal = document.getElementById('close-modal');
+        const restaurants = document.querySelectorAll('.restaurant');
+        const timeslots = document.querySelectorAll('.timeslot');
+        const confirmBooking = document.getElementById('confirm-booking');
+
+        let selectedRestaurant = '';
+        let selectedTimeSlot = '';
+
+        // Open the modal
+        openModal.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        });
+
+        // Close the modal
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Select restaurant
+        restaurants.forEach(restaurant => {
+            restaurant.addEventListener('click', () => {
+                restaurants.forEach(r => r.classList.remove('selected'));
+                restaurant.classList.add('selected');
+                selectedRestaurant = restaurant.dataset.name;
+            });
+        });
+
+        // Select timeslot
+        timeslots.forEach(timeslot => {
+            timeslot.addEventListener('click', () => {
+                timeslots.forEach(t => t.classList.remove('selected'));
+                timeslot.classList.add('selected');
+                selectedTimeSlot = timeslot.textContent;
+            });
+        });
+
+        // Confirm booking
+        confirmBooking.addEventListener('click', () => {
+            if (selectedRestaurant && selectedTimeSlot) {
+                alert(`Booking confirmed at ${selectedRestaurant} for ${selectedTimeSlot}!`);
+                modal.style.display = 'none';
+            } else {
+                alert('Please select both a restaurant and a time slot before confirming.');
+            }
+        });
+
+        // Close modal on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    updateCartCount();
+
+    // Function to add items to cart
+    function addToCart(event) {
+        const button = event.target;
+        const menuItem = button.closest(".menu-card, .seasonal-card"); // Works for both menu & seasonal specials
+        const itemName = menuItem.querySelector("h3").innerText;
+        const itemPrice = menuItem.querySelector(".price").innerText.replace("₹", "").trim();
+        const itemImage = menuItem.querySelector("img").src;
+
+        // Check if item already exists in cart
+        const existingItem = cartItems.find(item => item.name === itemName);
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cartItems.push({
+                name: itemName,
+                price: parseFloat(itemPrice),
+                quantity: 1,
+                image: itemImage
+            });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cartItems));
+        updateCartCount();
+        alert(`${itemName} added to cart!`);
+    }
+
+    // Attach event listeners to "Add to Cart" buttons
+    document.querySelectorAll(".add-btn").forEach(button => {
+        button.addEventListener("click", addToCart);
+    });
+
+    // Function to update cart count in navbar
+    function updateCartCount() {
+        const cartCountElement = document.getElementById("cart-count");
+        if (cartCountElement) {
+            cartCountElement.innerText = cartItems.reduce((total, item) => total + item.quantity, 0);
+        }
+    }
+});
+
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Tap Swad Online Foods. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

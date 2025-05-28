@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASTA RESTAURANT | TAP Swad</title>
+    <link rel="stylesheet" href="menu1.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">🍝</span>
+                <span>Pasta Restaurant</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="tapfoods.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="orderhistory.html"><i class="fas fa-clock-rotate-left"></i> History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="restaurant-title">Pasta Restaurant</h1>
+                <div class="restaurant-meta">
+                    <span><i class="fas fa-star" style="color: #FFD700;"></i> 4.0 (1.5k+)</span>
+                    <span><i class="fas fa-clock"></i> 30-35 min</span>
+                    <span><i class="fas fa-map-marker-alt"></i>Banashankari</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Italian Pasta</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t4.ftcdn.net/jpg/09/29/37/23/240_F_929372312_z8i2YlpVYJ3NMj1YiZfQ9lZtSIQ2WC9W.jpg" 
+                         alt="Spaghetti Pasta" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>NON-VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Spaghetti Pasta</h3>
+                        <span class="menu-price">₹99</span>
+                    </div>
+                    <p class="menu-description">Long, slurpy noodles tossed in rich, herby sauces — a comforting classic that's always in style.</p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 3.7
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Spaghetti Pasta', 
+                                99.00, 
+                                'Pasta Restaurant', 
+                                3.7, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t4.ftcdn.net\/jpg\/09/29/37/23/240_F_929372312_z8i2YlpVYJ3NMj1YiZfQ9lZtSIQ2WC9W.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://img.freepik.com/premium-photo/penne-pasta-with-tomatoes-parmesan_214995-3873.jpg?ga=GA1.1.1427086851.1732272333&semt=ais_hybrid" 
+                         alt="Tomato Pasta" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>NON-VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Tomato Pasta</h3>
+                        <span class="menu-price">₹140</span>
+                    </div>
+                    <p class="menu-description">Zesty and vibrant! Penne pasta coated in fresh tomato puree with garlic and Italian herbs — light and tangy.</p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 3.8
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Tomato Pasta', 
+                                140.00, 
+                                'Pasta Restaurant', 
+                                3.8, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/img.freepik.com\/premium-photo\/penne-pasta-with-tomatoes-parmesan_214995-3873.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image-container">
+                    <img src="https://t3.ftcdn.net/jpg/01/98/22/68/240_F_198226811_zC0TBcHloBMekHqKleibdDj9pFKThPsW.jpg" 
+                         alt="Chicken Penne Pasta" 
+                         class="menu-image">
+                    <div class="veg-badge"><i class="fas fa-leaf"></i>NON-VEG</div>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-header">
+                        <h3 class="menu-title">Chicken Penne Pasta</h3>
+                        <span class="menu-price">₹199</span>
+                    </div>
+                    <p class="menu-description">Crispy, spicy chicken fillet layered with lettuce, mayo, and a buttery bun — crunchy, juicy, and filling!</p>
+                    <div class="menu-footer">
+                        <span class="menu-rating">
+                            <i class="fas fa-star"></i> 4.1
+                        </span>
+                        <div class="menu-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
+                                <input type="number" class="quantity-input" value="1" min="1">
+                                <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
+                            </div>
+                            <button class="add-btn" onclick="addToCart(
+                                'Chicken Penne Pasta', 
+                                199.00, 
+                                'Pasta Restaurant', 
+                                4.1, 
+                                this.parentElement.parentElement.querySelector('.quantity-input').value,
+                                'https:\/\/t3.ftcdn.net\/jpg\/01/98/22/68/240_F_198226811_zC0TBcHloBMekHqKleibdDj9pFKThPsW.jpg'
+                            )">
+                                <i class="fas fa-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cart-notification" id="cart-notification">
+        <i class="fas fa-check-circle"></i>
+        <span>Added to your cart!</span>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>🍝</span>
+                <span>Pasta Restaurant</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 TAP Swad Online Foods. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to adjust quantity
+        function adjustQuantity(button, change) {
+            const input = button.parentElement.querySelector('.quantity-input');
+            let newValue = parseInt(input.value) + change;
+            if (newValue < 1) newValue = 1;
+            input.value = newValue;
+        }
+        
+        // Function to add items to the cart with animation
+        function addToCart(name, price, restaurant, rating, quantity, image) {
+            // Create cart item object
+            const cartItem = {
+                id: Date.now(),
+                name: name,
+                price: price,
+                restaurant: restaurant,
+                rating: rating,
+                quantity: parseInt(quantity),
+                image: image,
+                addedAt: new Date().toISOString()
+            };
+
+            // Add to cart in localStorage
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            
+            // Check if item exists
+            const existingItem = cart.find(item => item.name === name);
+            if (existingItem) {
+                existingItem.quantity += parseInt(quantity);
+            } else {
+                cart.push(cartItem);
+            }
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            // Update cart count with animation
+            updateCartCount(true);
+            
+            // Show notification
+            showNotification(name);
+            
+            // Add to cart animation
+            const addButton = event.target.closest('.add-btn');
+            addButton.innerHTML = '<i class="fas fa-check"></i> Added';
+            addButton.style.background = 'var(--secondary)';
+            
+            setTimeout(() => {
+                addButton.innerHTML = '<i class="fas fa-plus"></i> Add';
+                addButton.style.background = 'var(--primary)';
+            }, 2000);
+        }
+
+        // Function to update cart count with optional animation
+        function updateCartCount(animate = false) {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const totalItems = cart.reduce((total, item) => total + parseInt(item.quantity), 0);
+            const cartCount = document.getElementById("cart-count");
+            
+            if (animate) {
+                cartCount.style.transform = 'scale(1.2)';
+                setTimeout(() => {
+                    cartCount.style.transform = 'scale(1)';
+                }, 300);
+            }
+            
+            cartCount.textContent = totalItems;
+        }
+
+        // Function to show notification with item name
+        function showNotification(itemName) {
+            const notification = document.getElementById("cart-notification");
+            notification.querySelector('span').textContent = `${itemName} added to cart!`;
+            notification.classList.add("show");
+            
+            setTimeout(() => {
+                notification.classList.remove("show");
+            }, 3000);
+        }
+
+        // Initialize cart count on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+            
+            // Add subtle animations to menu cards on load
+            const cards = document.querySelectorAll('.menu-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+                card.classList.add('animate__animated', 'animate__fadeInUp');
+            });
+        });
+    </script>
+</body>
+</html>
